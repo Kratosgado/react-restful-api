@@ -44,6 +44,18 @@ export function NewPostForm({ onSave }: Props) {
             />
             <ValidationError fieldError={errors.description} />
          </div>
+         <div className={fieldStyle}>
+            <button type='submit'
+               disabled={isSubmitting}
+               className='mt-2 h-10 px-6 font-semibold bg-black text-white'
+            >{isSubmitting ? "Saving..." : "Save"}</button>
+            {isSubmitSuccessful && (
+               <div role='alert' className='text-green-500 text-xs mt-1'>
+                  The post was successfully saved
+               </div>
+            )}
+            
+         </div>
       </form>
    )
 }

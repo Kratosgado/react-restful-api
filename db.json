@@ -1,14 +1,19 @@
 {
-   "posts": [
-   {
-   "title": "Getting started with fetch",
-   "description": "How to interact with backend APIs usingfetch",
-   "id": 1
-   },
-   {
-   "title": "Getting started with useEffect",
-   "description": "How to use React's useEffect hook for interacting with backend APIs",
-   "id": 2
-   }
-   ]
-  }
+  "posts": [
+    {
+      "title": "Getting started with fetch",
+      "description": "How to interact with backend APIs usingfetch",
+      "id": 1
+    },
+    {
+      "title": "Getting started with useEffect",
+      "description": "How to use React's useEffect hook for interacting with backend APIs",
+      "id": 2
+    },
+    {
+      "title": "Learning your way through react",
+      "description": "Equipping yourself with the necassary skills to enable you compete well in the industry. Join us now and become a very successful worker",
+      "id": 3
+    }
+  ]
+}
