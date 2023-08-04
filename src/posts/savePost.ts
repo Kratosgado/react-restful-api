@@ -22,6 +22,5 @@ function assertIsSavedPost(post: any): asserts post is SavedPostData {
    }
    if (typeof post.id !== 'number') {
       throw new Error("id is not a number");
-      
    }
 }
