@@ -14,6 +14,11 @@
       "title": "Learning your way through react",
       "description": "Equipping yourself with the necassary skills to enable you compete well in the industry. Join us now and become a very successful worker",
       "id": 3
+    },
+    {
+      "title": "Kratos learning",
+      "description": "Kratos will be learning react, redux, resful api and graphql",
+      "id": 4
     }
   ]
 }
