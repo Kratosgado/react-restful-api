@@ -12,8 +12,9 @@ export async function getPosts() {
 export function assertIsPosts(postsData: unknown): asserts postsData is PostData[]{
    
    // check if the data is an array
-   if (!Array.isArray(postsData)) throw new Error("posts isn't an array");
-   
+   if (!Array.isArray(postsData)) {
+      throw new Error("posts isn't an array")
+   };
    // check if the data is not empty
    if (postsData.length === 0) return;
 

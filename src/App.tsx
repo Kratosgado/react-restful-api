@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, defer } from 'react-router-dom'
 import { getPosts } from './posts/getPosts';
 
 import './App.css';
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <PostsPage />,
-    loader: getPosts
+    loader: async () => defer({posts: getPosts()})
   }
 ]);
 

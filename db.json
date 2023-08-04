@@ -19,6 +19,11 @@
       "title": "Kratos learning",
       "description": "Kratos will be learning react, redux, resful api and graphql",
       "id": 4
+    },
+    {
+      "title": "New technology",
+      "description": "What is wrong with the old tech",
+      "id": 5
     }
   ]
 }
