@@ -24,6 +24,16 @@
       "title": "New technology",
       "description": "What is wrong with the old tech",
       "id": 5
+    },
+    {
+      "title": "A new technology awaits",
+      "description": "There has been new improvements in the study of our dear one",
+      "id": 6
+    },
+    {
+      "title": "The new name",
+      "description": "all is going to be given a new name under the constitution",
+      "id": 7
     }
   ]
 }

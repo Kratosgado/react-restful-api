@@ -1,10 +1,12 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider, defer } from 'react-router-dom'
-import { getPosts } from './posts/getPosts';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
+import { getPosts } from './posts/getPosts';
 import './App.css';
 import { PostsPage } from './posts/PostsPage';
 
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+     <RouterProvider router={router} />;
+    </QueryClientProvider>
+  )
 }
-
 export default App;
